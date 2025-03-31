@@ -1,22 +1,24 @@
 /* Estilos gerais */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-top: 56px; /* Espaço para a navbar fixa */
+    padding-top: 56px;
+    /* Espaço para a navbar fixa */
 }
 
-#titulo_id{
+#titulo_id {
     margin-left: 25px;
 }
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
-                url('https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        url('https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
     background-size: cover;
     background-position: center;
     min-height: 60vh;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2); /* Sombra para melhor contraste */
-  }
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    /* Sombra para melhor contraste */
+}
 
 /* Botões de redes sociais na navbar */
 .btn-whatsapp {
@@ -67,12 +69,32 @@ section {
     .hero-section {
         min-height: 60vh;
     }
-    
+
     .hero-section h1 {
         font-size: 2.5rem;
     }
-    
+
     section {
         padding: 60px 0;
+    }
+}
+
+/* Estilo para os ícones */
+.navbar-nav .nav-link i {
+    transition: transform 0.2s;
+}
+
+.navbar-nav .nav-link:hover i {
+    transform: scale(1.2);
+}
+
+/* Ajuste para mobile */
+@media (max-width: 992px) {
+    .navbar-nav {
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 5px 0;
     }
 }
